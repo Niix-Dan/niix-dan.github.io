@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niix - Daniel</title>
+    <link rel="stylesheet" href="./static/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://avatars.githubusercontent.com/u/46878004?v=4"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6f6dc9eec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scroll to Top ⬆️ -->
+    <script src="./static/js/scrollToTop.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p class="logo-text">Niix-Dan</p>
+          <!-- <img src="./assets/images/logo.png" class="logo" /> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!--<li><a href="blog.html">Outros</a></li>-->
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Fullstack Developer!</p>
+          <h1>
+            Hi, Im
+            <span class="name">Daniel</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------About----------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              class="img007"
+              src="./assets/images/Profile/Photo-to-use.png"
+            />
+          </div>
+          <div class="about-col-2 animate-entry-1">
+            <h1 class="sub-title">About Me</h1>
+
+            <p class="p-007">
+
+            <p id ="self_info">
+              "Hi, I'm Daniel. I'm a fullstack developer and intusiast of new technologies.
+              I've been passionate about coding and creating
+              awesome projects. I'm excited to continue
+              learning and growing in my studies and development skills. I'm skilled in
+              server-side technologies like Node.js, Express.js, and database
+              systems like MongoDB or MySQL. If you're looking for a motivated
+              and skilled back-end developer, I'd love to connect and discuss
+              how I can contribute to your team or project."
+            </p>
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Back-End Developer</span><br />
+                  ExpressJS, NodeJS, Firebase, MongoDB, MySQL, Java, Python, Php, C#, C++, etc
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------Projects----------------------------->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list animate-entry-1">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>NoxClient</h2>
+            <p class="p-007">
+              This is a fork of a project that i made with some improvements and new things for a minecraft client using java.
+            </p>
+            <a
+              href="https://github.com/Niix-Dan/NoxClient" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Two Factor Auth Chrome Extension</h2>
+            <p class="p-007">
+              This is a chrome extension build using HTML, CSS and JavaScript.
+              This is used to generates TFA codes in your browser without needing to install third party apps.
+            </p>
+            <a
+              href="https://github.com/Niix-Dan/niixtfa" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-node"></i>
+            <h2>WdMath</h2>
+            <p class="p-007">
+              WdMath is a powerful Node.js module that helps you in math questions, this module is for advanced calcs using geometric math and others
+            </p>
+            <a
+              href="https://www.npmjs.com/package/wdmath" target="_blank"
+              ><span style="font-size: 22px;">View Project</span></a
+            ><br>
+            <a
+              href="https://github.com/Niix-Dan/WdMath" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i><a class="email" href="mailto:daniel.fernaandes.f@gmail.com">daniel.fernaandes.f@gmail.com</a> 
+            </p>
+
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/daniel-fernandes-04488a197/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/niix-dan" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="./assets/docs/resume (1).pdf" download class="btn btn2 "
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right animate-entry-1">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name.."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message..."
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <!-- My btn -->
+      <button class="back-to-top hidden-top-btn">
+        <a href="#header"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+      </button>
+      <div class="copyright">
+        <p>
+          © 2024, Daniel - Niix Portfolio. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxH5fxfqQLK9QR05D20SKhSxipraz0xHX-FsiWRiLW0UL9nRH9WckUCHoCCEKWqE7GcSg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML =
+              "ThankYou. Your Message has been sent Successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("scrolled", window.scrollY > 0);
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slideInElement = document.querySelectorAll(".animate-entry-1");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active-animation");
+              // observer.unobserve(entry);
+            }
+          });
+        });
+        slideInElement.forEach((el) => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>
