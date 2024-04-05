@@ -222,7 +222,7 @@
       const msg = document.getElementById("msg");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        fetch(scriptURL, { redirect: "follow", method: "POST", body: new FormData(form), headers: { "Content-Type": "text/plain;charset=utf-8" }})
           .then((response) => {
             msg.innerHTML =
               "ThankYou. Your Message has been sent Successfully.";
