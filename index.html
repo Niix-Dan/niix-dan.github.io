@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Scroll to Top ⬆️ -->
     <script src="./static/js/scrollToTop.js" defer></script>
   </head>
   <body>
@@ -23,28 +22,25 @@
       <div class="container">
         <nav>
           <p class="logo-text">Niix-Dan</p>
-          <!-- <img src="./assets/images/logo.png" class="logo" /> -->
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!--<li><a href="blog.html">Outros</a></li>-->
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Fullstack Developer!</p>
+          <p>Fullstack Developer</p>
           <h1>
-            Hi, Im
+            Hi, I'm
             <span class="name">Daniel</span>
           </h1>
         </div>
       </div>
     </div>
 
-    <!----------------------------About----------------------------->
     <div id="about">
       <div class="container">
         <div class="row">
@@ -52,33 +48,30 @@
             <img
               class="img007"
               src="./assets/images/Profile/20240331_163236.jpg"
+              alt="Profile Picture"
             />
           </div>
           <div class="about-col-2 animate-entry-1">
             <h1 class="sub-title">About Me</h1>
 
-            <p class="p-007">
-
-            <p id ="self_info">
-              "Hi, I'm Daniel. I'm a fullstack developer and intusiast of new technologies.
-              I've been passionate about coding and creating
-              awesome projects. I'm excited to continue
-              learning and growing in my studies and development skills. I'm skilled in
-              server-side technologies like Node.js, Express.js, and database
-              systems like MongoDB or MySQL. If you're looking for a motivated
-              and skilled back-end developer, I'd love to connect and discuss
-              how I can contribute to your team or project."
+            <p id="self_info">
+              Hi, I'm Daniel. I'm a passionate Fullstack Developer with a strong focus on Backend technologies.
+              I love building efficient, scalable solutions and I'm constantly learning new tools to improve my craft.
+              Currently, I'm specializing in the <b>Java</b>, <b>JavaScript/TypeScript</b> and <b>Rust</b> ecosystems.
+              If you're looking for a motivated developer to contribute to your team with clean code and modern practices, let's connect.
             </p>
+            
             <div class="tab-titles">
               <div class="tab-links active-link" onclick="opentab('skills')">
-                Skills
+                Tech Stack
               </div>
             </div>
+            
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>Back-End Developer</span><br />
-                  ExpressJS, NodeJS, Firebase, MongoDB, MySQL, Java, Python, Php, C#, C++, etc
+                  <span>Backend & Tools</span><br />
+                  Java, TypeScript, JavaScript (Node.js/Express), <b>Rust (Learning)</b>, MySQL, Docker, Git.
                 </li>
               </ul>
             </div>
@@ -86,82 +79,22 @@
         </div>
       </div>
     </div>
-    <!-------------------------------Projects----------------------------->
+
     <div id="projects">
       <div class="container">
         <h1 class="sub-title">My Projects</h1>
-        <div class="projects-list animate-entry-1">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>NCraft - Fabric Mod</h2>
-            <p class="p-007">
-              This is a minecraft 1.19.2 Fabric mod, that adds a new dimension called "Oblivion" and lots of new stuff.
-              I'm currently working on this project
-            </p>
-            
-            <a href="https://github.com/Niix-Dan/NCraft" target="_blank"><span style="font-size: 22px;">View Code</span></a>
-          </div>
-          
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>StatusCord - Spigot Plugin</h2>
-            <p class="p-007">
-              A minecraft spigot plugin, that adds support for your server via discord, with TpsAlerter, and realtime server info.
-              The plugin also supports PlaceholderAPI
-              I'm currently working on this project
-            </p>
-            <a href="https://www.spigotmc.org/resources/statuscord-v1-1-1-realtime-status-tps-alerter.117887" target="_blank"><span style="font-size: 22px;">SpigotMC</span></a><br>
-            <a href="https://github.com/Niix-Dan/StatusCord" target="_blank"><span style="font-size: 22px;">View Code</span></a>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>CmdI (CommandItems) - Spigot Plugin</h2>
-            <p class="p-007">
-              A versatile and powerful Minecraft (Spigot) plugin designed to enhance gameplay by introducing custom command-triggered items
-            </p>
-            <a href="https://www.spigotmc.org/resources/cmdi-commanditems-updated.116189" target="_blank"><span style="font-size: 22px;">SpigotMC</span></a><br>
-            <a href="https://github.com/Niix-Dan/CommandItems" target="_blank"><span style="font-size: 22px;">View Code</span></a>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>ConsoleDiscord - Spigot Plugin</h2>
-            <p class="p-007">
-              Spigot plugin that links your minecraft server console to a discord channel, so you can use in the discord and vice-versa.
-              Also has a whitelist of allowed members to type commands and regex support
-            </p>
-            <a href="https://www.spigotmc.org/resources/consolediscord-updated.102975/" target="_blank"><span style="font-size: 22px;">SpigotMC</span></a><br>
-            <a href="https://github.com/Niix-Dan/ConsoleDiscord" target="_blank"><span style="font-size: 22px;">View Code</span></a>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Two Factor Auth Chrome Extension</h2>
-            <p class="p-007">
-              This is a chrome extension build using HTML, CSS and JavaScript.
-              This is used to generates TFA codes in your browser without needing to install third party apps.
-            </p>
-            <a
-              href="https://github.com/Niix-Dan/niixtfa" target="_blank"
-              ><span style="font-size: 22px;">View Code</span></a
-            >
-          </div>
-          <div>
-            <i class="fa-brands fa-node"></i>
-            <h2>WdMath</h2>
-            <p class="p-007">
-              A Node.js module that helps you in math questions, this module is used for calcs using geometric math and others
-            </p>
-            <a
-              href="https://www.npmjs.com/package/wdmath" target="_blank"
-              ><span style="font-size: 22px;">NpmJs</span></a
-            ><br>
-            <a
-              href="https://github.com/Niix-Dan/WdMath" target="_blank"
-              ><span style="font-size: 22px;">View Code</span></a
-            >
-          </div>
+        
+        <div class="animate-entry-1" style="text-align: center; margin-top: 50px; padding: 20px;">
+          <i class="fa-solid fa-laptop-code fa-3x" style="color: #ff004f; margin-bottom: 20px;"></i>
+          <h2>Refactoring in Progress</h2>
+          <p style="max-width: 600px; margin: 15px auto; line-height: 1.6;">
+            I am currently reorganizing my portfolio and refactoring my repositories to reflect modern architecture and clean code standards.
+            New high-quality projects will be available here soon.
+          </p>
+          <br>
+          <a href="https://github.com/Niix-Dan" target="_blank" class="btn">Visit my GitHub</a>
         </div>
+
       </div>
     </div>
 
@@ -171,7 +104,8 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p>
-              <i class="fa-solid fa-envelope"></i><a class="email" href="mailto:daniel.fernaades.f@gmail.com">daniel.fernaades.f@gmail.com</a> 
+              <i class="fa-solid fa-envelope"></i>
+              <a class="email" href="mailto:daniel.fernaades.f@gmail.com">daniel.fernaades.f@gmail.com</a>
             </p>
 
             <div class="social-icons">
@@ -184,9 +118,7 @@
                 ><i class="fab fa-github"></i
               ></a>
             </div>
-            <a href="./assets/docs/curriculum_vitae.pdf" download class="btn btn2 "
-              >Download CV</a
-            >
+            <a href="./assets/docs/curriculum_vitae.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right animate-entry-1">
             <form name="submit-to-google-sheet">
@@ -213,13 +145,14 @@
           </div>
         </div>
       </div>
-      <!-- My btn -->
+      
       <button class="back-to-top hidden-top-btn">
         <a href="#header"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
       </button>
+      
       <div class="copyright">
         <p>
-          © 2024, Daniel - Niix Portfolio. All Rights Reserved.
+          © 2026, Daniel - Niix Portfolio. All Rights Reserved.
         </p>
       </div>
     </div>
@@ -257,7 +190,7 @@
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             msg.innerHTML =
-              "ThankYou. Your Message has been sent Successfully.";
+              "Thank You. Your Message has been sent Successfully.";
             setTimeout(function () {
               msg.innerHTML = "";
             }, 5000);
